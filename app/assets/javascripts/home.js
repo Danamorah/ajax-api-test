@@ -46,7 +46,7 @@ $(function() {
             manageStatus("Invalid Artist");
             return;
         }
-        if(song.year == "" || isNaN(song.year) || parseInt(song.year) < 1900 || parseInt(movie.year) > 2016){
+        if(song.year == "" || isNaN(song.year) || parseInt(song.year) < 1900 || parseInt(song.year) > 2016){
             manageStatus("Invalid Year");
             return;
         }
