@@ -38,8 +38,8 @@ $(function() {
         // mi codigo//
 
         if(song.title == "" || song.title.lenght < 40){
-            //mensajeError = mensajeError + "<p>Error: Invalid Title</p>";
             manageStatus("Invalid Title");
+            $('.errors').prepend($status); ///how to simplify this???
             return;
         }
         if(song.artist == "" || song.artist.lenght < 60){
@@ -55,6 +55,7 @@ $(function() {
             return;
 
         } 
+        
         
 
         //fin de mi codigo    
@@ -78,6 +79,7 @@ $(function() {
                 manageStatus("Status: Request Failed", false);
             }
         });
+
         
     };
     
